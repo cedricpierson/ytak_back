@@ -1,5 +1,6 @@
 const Sequelize = require('sequelize');
 const { config } = require('../config/db.config');
+// eslint-disable-next-line no-undef
 const ENV = process.env.NODE_ENV;
 
 const sequelize = new Sequelize(

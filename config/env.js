@@ -1,4 +1,4 @@
-require('dotenv').config();
+const env = require('dotenv').config();
 
 const DEV = {
   PORT: '3001',
@@ -12,7 +12,7 @@ const PROD = {
 };
 
 const getEnv = () => {
-  switch (process.env.NODE_ENV) {
+  switch (env.NODE_ENV) {
     case 'DEV':
       return DEV;
       // eslint-disable-next-line no-unreachable
