@@ -1,6 +1,6 @@
 module.exports = (sequelize, DataTypes) => {
   return sequelize.define(
-    'role',
+    "role",
     {
       id: {
         autoIncrement: true,
@@ -15,14 +15,14 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      tableName: 'role',
+      tableName: "role",
       timestamps: false,
       indexes: [
         {
-          name: 'PRIMARY',
+          name: "PRIMARY",
           unique: true,
-          using: 'BTREE',
-          fields: [{ name: 'id' }],
+          using: "BTREE",
+          fields: [{ name: "id" }],
         },
       ],
     }

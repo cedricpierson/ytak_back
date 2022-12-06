@@ -1,5 +1,5 @@
-const Sequelize = require('sequelize');
-const { config } = require('../config/db.config');
+const Sequelize = require("sequelize");
+const { config } = require("../config/db.config");
 // eslint-disable-next-line no-undef
 const ENV = process.env.NODE_ENV;
 
@@ -26,8 +26,8 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.user = require('./user')(sequelize, Sequelize);
-db.role = require('./role')(sequelize, Sequelize);
+db.user = require("./user")(sequelize, Sequelize);
+db.role = require("./role")(sequelize, Sequelize);
 
 db.role.hasMany(db.user);
 db.user.belongsTo(db.role);

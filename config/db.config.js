@@ -1,4 +1,4 @@
-const env = require('dotenv').config();
+const env = require("dotenv").config();
 
 const config = {
   DEV: {
@@ -6,7 +6,7 @@ const config = {
     USER: env.DB_USER,
     PASSWORD: env.DB_PASSWORD,
     DB: env.DB_NAME,
-    dialect: 'mysql',
+    dialect: "mysql",
     pool: {
       max: 5,
       min: 0,
@@ -19,7 +19,7 @@ const config = {
     USER: env.DB_USERNAME,
     PASSWORD: env.DB_PASSWORD,
     DB: env.DB_NAME,
-    dialect: 'mysql',
+    dialect: "mysql",
     pool: {
       max: 5,
       min: 0,

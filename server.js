@@ -1,11 +1,11 @@
-const express = require('express');
-const cors = require('cors');
+const express = require("express");
+const cors = require("cors");
 
 const app = express();
-const env = require('./config/env');
-const setupRoutes = require('./routes/index');
+const env = require("./config/env");
+const setupRoutes = require("./routes/index");
 // eslint-disable-next-line no-unused-vars
-const datasApp = require('./datas/index');
+const datasApp = require("./datas/index");
 
 app.use(cors());
 app.use(express.json());
